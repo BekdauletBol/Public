@@ -41,7 +41,7 @@ struct FeedView: View {
 				}
 				.padding()
 			}
-			.navigationTitle("Public.")
+			.navigationTitle("public.")
 			.searchable(text: $viewModel.searchText, prompt: "Search for books, electronics...")
 			.refreshable {
 				await viewModel.fetchPosts()

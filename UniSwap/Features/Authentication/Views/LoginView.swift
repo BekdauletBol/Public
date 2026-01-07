@@ -6,7 +6,7 @@ struct LoginView: View {
 	var body: some View {
 		NavigationStack {
 			VStack(spacing: 20) {
-				Text("Public.")
+				Text("public.")
 					.font(.largeTitle)
 					.fontWeight(.black)
 					.foregroundColor(.uniPrimary)
