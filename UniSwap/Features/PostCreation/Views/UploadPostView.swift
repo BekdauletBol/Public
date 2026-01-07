@@ -60,14 +60,14 @@ struct UploadPostView: View {
 				.disabled(viewModel.title.isEmpty || viewModel.postImage == nil || viewModel.isLoading)
 			}
 			.navigationTitle("New Post")
-			.onChange(of: viewModel.didUpload) {
-				if viewModel.didUpload { dismiss() }
-			}
-			.onChange(of: viewModel.didUpload) { oldValue, newValue in
+			.navigationBarTitleDisplayMode(.inline)
+			// --- iOS 16 COMPATIBLE ONCHANGE ---
+			.onChange(of: viewModel.didUpload) { newValue in
 				if newValue == true {
-					dismiss() 
+					dismiss()
 				}
 			}
+			// ----------------------------------
 		}
 	}
 }

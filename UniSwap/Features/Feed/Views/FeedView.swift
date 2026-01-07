@@ -13,7 +13,22 @@ struct FeedView: View {
 						ProgressView("Searching...")
 							.padding(.top, 50)
 					} else if viewModel.filteredPosts.isEmpty {
-						ContentUnavailableView.search(text: viewModel.searchText)
+						VStack(spacing: 16) {
+							Image(systemName: "magnifyingglass")
+								.font(.system(size: 64))
+								.foregroundColor(.secondary)
+							
+							Text("No results for \"\(viewModel.searchText)\"")
+								.font(.title2.bold())
+							
+							Text("Check the spelling or try a different keyword.")
+								.font(.subheadline)
+								.foregroundColor(.secondary)
+								.multilineTextAlignment(.center)
+						}
+						.padding(.horizontal, 32)
+						.padding(.top, 100)
+						// --------------------------------------
 					} else {
 						ForEach(viewModel.filteredPosts) { post in
 							PostCard(post: post) {
@@ -21,7 +36,6 @@ struct FeedView: View {
 									await viewModel.fetchPosts()
 								}
 							}
-							
 						}
 					}
 				}
