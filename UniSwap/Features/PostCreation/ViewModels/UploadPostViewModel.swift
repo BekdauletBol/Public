@@ -53,7 +53,7 @@ class UploadPostViewModel: ObservableObject {
 				price: Double(priceString),
 				imageUrl: imageUrl,
 				phoneNumber: user.phone_number,
-				telegramHandle: user.telegram_handle, // NEW: Grabbing from student profile
+				telegramHandle: user.telegram_handle,
 				timestamp: Date()
 			)
 			

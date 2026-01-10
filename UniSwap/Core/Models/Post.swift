@@ -28,7 +28,7 @@ struct Post: Codable, Identifiable, Hashable, Sendable {
 	
 	var formattedPrice: String {
 		if let price = price, price > 0 {
-			return String(format: "$%.2f", price)
+			return String(format: "%.2f₸", price)
 		} else {
 			return "Free / Favor"
 		}

@@ -43,7 +43,7 @@ struct RegistrationView: View {
 				.foregroundColor(.white)
 			}
 		}
-		.navigationTitle("Join UniSwap")
+		.navigationTitle("Join public.")
 		.alert("Error", isPresented: $viewModel.showAlert) {
 			Button("OK", role: .cancel) {}
 		} message: {
