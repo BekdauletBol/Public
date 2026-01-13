@@ -16,6 +16,7 @@ struct ImageUploader {
 		try await client.storage
 			.from("post_images")
 			.upload(
+				
 				fileName,
 				data: data,
 				options: FileOptions(contentType: "image/jpeg")

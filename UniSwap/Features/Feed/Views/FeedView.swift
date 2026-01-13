@@ -8,6 +8,7 @@ struct FeedView: View {
 	var body: some View {
 		NavigationStack {
 			ScrollView {
+				
 				LazyVStack(spacing: 16) {
 					if viewModel.isLoading && viewModel.posts.isEmpty {
 						ProgressView("Searching...")

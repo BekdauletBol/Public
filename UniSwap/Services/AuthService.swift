@@ -12,6 +12,7 @@ final class AuthService: ObservableObject {
 	
 	private init() {}
 	
+	
 	func registerUser(email: String, password: String, firstName: String, lastName: String, university: String, group: String, phoneNumber: String, telegramHandle: String) async throws {
 		let response = try await client.auth.signUp(email: email, password: password)
 		let userId = response.user.id

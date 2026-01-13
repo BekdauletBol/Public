@@ -11,6 +11,7 @@ struct FavoritesView: View {
 						ProgressView()
 							.padding(.top, 50)
 					} else if viewModel.favoritePosts.isEmpty {
+						
 						// --- iOS 16 COMPATIBLE EMPTY STATE ---
 						VStack(spacing: 16) {
 							Image(systemName: "heart.slash")

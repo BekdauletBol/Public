@@ -7,5 +7,6 @@ extension Color {
 	static let uniSecondary = Color("UniSecondary")
 	static let uniBackground = Color("UniBackground")
 	static let uniText = Color("UniText")
+	
 }
 

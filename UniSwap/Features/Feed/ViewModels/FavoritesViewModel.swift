@@ -16,4 +16,5 @@ class FavoritesViewModel: ObservableObject {
 		}
 		isLoading = false
 	}
+	
 }

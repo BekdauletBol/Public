@@ -8,6 +8,7 @@ struct RegistrationView: View {
 		VStack {
 			Form {
 				Section("Personal Details") {
+					
 					TextField("First Name", text: $viewModel.firstName)
 					TextField("Last Name", text: $viewModel.lastName)
 					TextField("University", text: $viewModel.university)

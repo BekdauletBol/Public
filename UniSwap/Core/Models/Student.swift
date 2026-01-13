@@ -13,3 +13,4 @@ struct Student: Codable, Identifiable, Hashable, Sendable {
 	
 	var fullName: String { "\(first_name) \(last_name)" }
 }
+

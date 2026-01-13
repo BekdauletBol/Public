@@ -10,6 +10,7 @@ struct OnboardingView: View {
 	var body: some View {
 		ZStack {
 			// BACKGROUND COLOR
+			
 			Color("publicBackground")
 				.ignoresSafeArea()
 			

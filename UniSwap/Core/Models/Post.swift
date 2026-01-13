@@ -13,6 +13,7 @@ struct Post: Codable, Identifiable, Hashable, Sendable {
 	let type: PostType
 	let price: Double?
 	let imageUrl: String?
+	
 	let phoneNumber: String?
 	let telegramHandle: String? // NEW: Added Telegram Handle
 	let timestamp: Date

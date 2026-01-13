@@ -18,6 +18,7 @@ class ProfileViewModel: ObservableObject {
 		}
 	}
 	
+	
 	func signOut() {
 		Task {
 			await AuthService.shared.signOut()

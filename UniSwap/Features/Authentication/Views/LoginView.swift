@@ -9,6 +9,7 @@ struct LoginView: View {
 				Text("public.")
 					.font(.largeTitle)
 					.fontWeight(.black)
+				
 					.foregroundColor(.uniPrimary)
 				
 				VStack(spacing: 12) {

@@ -7,6 +7,7 @@ class RegistrationViewModel: ObservableObject {
 	@Published var email = ""
 	@Published var password = ""
 	@Published var firstName = ""
+	
 	@Published var lastName = ""
 	@Published var university = ""
 	@Published var group = ""

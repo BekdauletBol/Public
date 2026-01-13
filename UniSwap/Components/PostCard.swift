@@ -4,6 +4,7 @@ struct PostCard: View {
 	let post: Post
 	var onDelete: (() -> Void)? = nil
 	
+	
 	@State private var isLiked = false
 	@State private var showDeleteConfirmation = false
 	@State private var animateHeart = false 

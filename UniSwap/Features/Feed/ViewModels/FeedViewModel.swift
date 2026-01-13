@@ -19,6 +19,7 @@ class FeedViewModel: ObservableObject {
 		}
 	}
 	
+	
 	func fetchPosts() async {
 		isLoading = true
 		do {

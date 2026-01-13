@@ -9,6 +9,7 @@ struct HelloView: View {
 	private let greetings = ["salem.","hello.", "bonjour.", "privet.", "hola.", "public."]
 	
 	var body: some View {
+		
 		ZStack {
 			Color("publicBackground")
 				.ignoresSafeArea()

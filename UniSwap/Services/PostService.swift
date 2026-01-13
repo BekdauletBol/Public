@@ -14,6 +14,7 @@ struct PostService: Sendable {
 		let response = try await client
 			.from("posts")
 			.delete()
+		
 			.eq("id", value: postId)
 			.execute()
 		

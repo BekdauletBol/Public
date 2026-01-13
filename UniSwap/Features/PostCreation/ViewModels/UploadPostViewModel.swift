@@ -14,6 +14,7 @@ class UploadPostViewModel: ObservableObject {
 	@Published var selectedItem: PhotosPickerItem? {
 		didSet { Task { await loadImage() } }
 	}
+	
 	@Published var postImage: UIImage?
 	
 	// UI State
